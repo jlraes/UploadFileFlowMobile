@@ -4,6 +4,9 @@
 sfdx force:org:create -s -f config/project-scratch-def.json -a "UploadFileFlowMobile"
 
 ## Resources
+https://developer.salesforce.com/docs/atlas.en-us.salesforce_vpm_guide.meta/salesforce_vpm_guide/vpm_files.htm
+https://releasenotes.docs.salesforce.com/en-us/spring18/release-notes/rn_forcecom_flow_file.htm
+https://salesforcesidekick.com/2018/01/15/the-lowdown-on-uploading-a-file-inside-a-flow/
 
 
 ## Description of Files and Directories
