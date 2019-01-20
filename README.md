@@ -2,13 +2,13 @@
 
 ## Dev, Build and Test
 SCRATCH ORG
-
+-----------
 sfdx force:org:create -s -f config/project-scratch-def.json -a "UploadFileFlowMobile"
 
 sfdx force:source:push
 
 CLASSIC ORG
-
+-----------
 sfdx force:source:convert -d mdapioutput/
 
 sfdx force:mdapi:deploy -d ./mdapioutput -u YourOrgAlias -w 100
