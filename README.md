@@ -1,7 +1,15 @@
 # SFDX  App
 
 ## Dev, Build and Test
+SCRATCH ORG
 sfdx force:org:create -s -f config/project-scratch-def.json -a "UploadFileFlowMobile"
+sfdx force:source:push
+
+CLASSIC ORG
+sfdx force:source:convert -d mdapioutput/
+
+sfdx force:mdapi:deploy -d ./mdapioutput -u YourOrgAlias -w 100
+
 
 ## Resources
 https://developer.salesforce.com/docs/atlas.en-us.salesforce_vpm_guide.meta/salesforce_vpm_guide/vpm_files.htm
